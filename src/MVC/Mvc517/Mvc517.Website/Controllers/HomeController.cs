@@ -1,4 +1,5 @@
-﻿using Mvc517.DAL.Models;
+﻿using Mvc517.DAL;
+using Mvc517.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,23 +11,15 @@ namespace Mvc517.Website.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index(string myName)
+        public ActionResult Create(string myName)
         {
             //Debug.WriteLine($"myName");
-
-            var viewModel = new Opera() {
-                Id = 1,
-                Title = "歌劇魅影",
-                Year = 2017,
-                Composer = "Big boss"
-            };
-
+            var viewModel = new Opera();
             return View(viewModel);
         }
 
         [HttpPost]
-        public ActionResult Index(Opera viewModel)
+        public ActionResult Create(Opera viewModel)
         {
             if (this.ModelState.IsValid)
             {
@@ -37,7 +30,53 @@ namespace Mvc517.Website.Controllers
                 ViewBag.IsValidateOK = "FALSE";
             }
 
+
+            using (var dbContext = new MvcDbContext())
+            {
+                dbContext.Operas.Add(viewModel);
+                dbContext.SaveChanges();
+            }
             return View(viewModel);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            //Debug.WriteLine($"myName");
+
+            using (var dbContext = new MvcDbContext())
+            {
+                var viewModel = dbContext.Operas.Where(x => x.Id.Equals(id)).FirstOrDefault();
+
+                return View(viewModel);
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Opera viewModel)
+        {
+            using (var dbContext = new MvcDbContext())
+            {
+                var entity = dbContext.Operas.Where(x => x.Id.Equals(viewModel.Id)).FirstOrDefault();
+                dbContext.Operas.Attach(viewModel);
+                dbContext.SaveChanges();
+
+                return View(viewModel);
+            }
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="myName"></param>
+        /// <returns></returns>
+        public ActionResult List()
+        {
+            using (var dbContext = new MvcDbContext())
+            {
+                var viewModel = dbContext.Operas.ToList();
+                return View(viewModel);
+            }
         }
 
     }
