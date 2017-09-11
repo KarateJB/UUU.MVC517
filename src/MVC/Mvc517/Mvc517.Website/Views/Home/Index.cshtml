@@ -1,8 +1,26 @@
-﻿
+﻿@model Mvc517.Website.Models.Opera
 <h2>Home page</h2>
 
 
 <form>
     <input type="text" id="myName" name="myName" value="@Request["myName"]"/>
     <input type="submit" value="Submit" />
+    @if (Request["myName"] != null)
+    {
+        <span>Hi, @Request["myName"]</span>
+    }
+
+    <div>
+       <span>@Html.DisplayNameFor(m=>m.Id)</span>
+       @Model.Id</div>
+    <div>
+        <span>@Html.DisplayNameFor(m => m.Title)</span>
+    @Model.Title</div>
+    <div>
+        <span>@Html.DisplayNameFor(m => m.Year)</span>
+    @Model.Year</div>
+    <div>
+        <span>@Html.DisplayNameFor(m => m.Composer)</span>
+    @Model.Composer</div>
+
 </form>

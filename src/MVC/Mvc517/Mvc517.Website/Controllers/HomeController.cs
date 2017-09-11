@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mvc517.Website.Models;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -13,7 +14,15 @@ namespace Mvc517.Website.Controllers
         public ActionResult Index(string myName)
         {
             Debug.WriteLine($"myName");
-            return View();
+
+            var viewModel = new Opera() {
+                Id = 1,
+                Title = "歌劇魅影",
+                Year = 2017,
+                Composer = "Big boss"
+            };
+
+            return View(viewModel);
         }
         
     }
