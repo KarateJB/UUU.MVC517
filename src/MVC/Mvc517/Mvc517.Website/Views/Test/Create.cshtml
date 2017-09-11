@@ -1,38 +1,18 @@
 ﻿@model Mvc517.Website.Models.Opera
 
 @{
+    ViewBag.Title = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<h2>Create</h2>
 
-
-<h2>Home page</h2>
-
-@*
-    <form>
-        <input type="text" id="myName" name="myName" value="@Request["myName"]"/>
-            <input type="submit" value="Submit" />
-            @if (Request["myName"] != null)
-            {
-                <span>Hi, @Request["myName"]</span>
-            }
-        </form>
-*@
-
-@{
-
-    if (ViewBag.IsValidateOK != null)
-    {
-        string msg = ViewBag.IsValidateOK;
-        @: <h1>@msg</h2>
-    }
-}
-
-@using (Html.BeginForm())
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-
+    
     <div class="form-horizontal">
+        <h4>Opera</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
@@ -66,3 +46,7 @@
         </div>
     </div>
 }
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

@@ -13,7 +13,7 @@ namespace Mvc517.Website.Controllers
         // GET: Home
         public ActionResult Index(string myName)
         {
-            Debug.WriteLine($"myName");
+            //Debug.WriteLine($"myName");
 
             var viewModel = new Opera() {
                 Id = 1,
@@ -24,6 +24,21 @@ namespace Mvc517.Website.Controllers
 
             return View(viewModel);
         }
-        
+
+        [HttpPost]
+        public ActionResult Index(Opera viewModel)
+        {
+            if (this.ModelState.IsValid)
+            {
+                ViewBag.IsValidateOK = "TRUE";
+            }
+            else
+            {
+                ViewBag.IsValidateOK = "FALSE";
+            }
+
+            return View(viewModel);
+        }
+
     }
 }

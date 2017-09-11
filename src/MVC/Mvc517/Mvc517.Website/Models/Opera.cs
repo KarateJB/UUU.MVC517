@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mvc517.Website.Validator;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -17,6 +18,7 @@ namespace Mvc517.Website.Models
         [Required]
         public string Title  { get; set; }
 
+        [YearValidator]
         [DisplayName("年分")]
         public int? Year { get; set; }
 
