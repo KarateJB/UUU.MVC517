@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Mvc517.Website.Validator
+namespace Mvc517.DAL.Validator
 {
     public class YearValidator :ValidationAttribute
     {

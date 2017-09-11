@@ -1,15 +1,14 @@
-﻿using Mvc517.Website.Validator;
-using System;
-using System.Collections.Generic;
+﻿using Mvc517.DAL.Validator;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Mvc517.Website.Models
+namespace Mvc517.DAL.Models
 {
     public class Opera
     {
+        [Key]
         [DisplayName("代號")]
         [Required]
         public int Id { get; set; }
