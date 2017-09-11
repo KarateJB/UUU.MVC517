@@ -52,6 +52,10 @@
     <Compile Include="Migrations\201709110732127_InitialCreate.Designer.cs">
       <DependentUpon>201709110732127_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709110830086_AddNewDatetimes.cs" />
+    <Compile Include="Migrations\201709110830086_AddNewDatetimes.Designer.cs">
+      <DependentUpon>201709110830086_AddNewDatetimes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Opera.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +68,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709110732127_InitialCreate.resx">
       <DependentUpon>201709110732127_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709110830086_AddNewDatetimes.resx">
+      <DependentUpon>201709110830086_AddNewDatetimes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

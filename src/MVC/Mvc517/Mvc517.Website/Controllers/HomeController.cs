@@ -11,6 +11,26 @@ namespace Mvc517.Website.Controllers
 {
     public class HomeController : Controller
     {
+
+        public ActionResult XmlDemo()
+        {
+            string data = "<Name>JB</Name><Gender>Male</Gender>";
+            return Content(data, "text/xml");
+        }
+
+        public ActionResult JsonDemo()
+        {
+            var data = new
+            {
+                id = "JB",
+                gender = "male",
+                phone = "0933xxxxxx"
+            };
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
+
         public ActionResult Create(string myName)
         {
             //Debug.WriteLine($"myName");
@@ -33,6 +53,8 @@ namespace Mvc517.Website.Controllers
 
             using (var dbContext = new MvcDbContext())
             {
+                viewModel.CreateOn = DateTime.Now;
+                viewModel.UpdateOn = DateTime.Now;
                 dbContext.Operas.Add(viewModel);
                 dbContext.SaveChanges();
             }
@@ -57,10 +79,15 @@ namespace Mvc517.Website.Controllers
             using (var dbContext = new MvcDbContext())
             {
                 var entity = dbContext.Operas.Where(x => x.Id.Equals(viewModel.Id)).FirstOrDefault();
-                dbContext.Operas.Attach(viewModel);
+                entity.Title = viewModel.Title;
+                entity.Year = viewModel.Year;
+                entity.Composer = viewModel.Composer;
+                entity.UpdateOn = DateTime.Now;
+                //viewModel.UpdateOn = DateTime.Now;
+                //dbContext.Operas.Attach(viewModel);
                 dbContext.SaveChanges();
 
-                return View(viewModel);
+                return RedirectToAction("List");
             }
         }
 

@@ -19,5 +19,34 @@ Select **ASP.NET Web Site (Razor v3)**
 
 ![](assets\001.PNG)
 
-2. 
+
+
+
+## MVC 
+
+1. Content Result
+
+The following action will return content-type:text/xml
+
+* Controller.cs
+
+```
+public ActionResult XmlDemo()
+{
+    string data = "<Name>JB</Name><Gender>Male</Gender>";
+    return Content(data, "text/xml");
+}
+
+public ActionResult JsonDemo()
+{
+    var data = new
+    {
+        id = "JB",
+        gender = "male",
+        phone = "0933xxxxxx"
+    };
+
+    return Json(data, JsonRequestBehavior.AllowGet);
+}
+```
 
