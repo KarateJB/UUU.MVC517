@@ -5,7 +5,7 @@
 }
 
 
-<div id="app">
+@*<div id="app">
     {{ message }} 
     <table>
         <tr>
@@ -14,11 +14,20 @@
             <td></td>
         </tr>
     </table>         
-</div>
+</div>*@
 
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
+<hr />
+<div>
+    @using (Html.BeginForm("Filter", "Home", FormMethod.Get))
+    {
+        @Html.TextBox("SearchTitle")
+        <input type="submit" value="查詢" /> 
+    }
+</div>
+
     <table class="table">
         <tr>
             <th>

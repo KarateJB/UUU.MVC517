@@ -59,6 +59,14 @@ namespace Mvc517.Website.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult Filter(string searchTitle)
+        {
+            var viewModel = this._dbContext.Operas.Where(x => x.Title.Contains(searchTitle))
+                .OrderBy(x => x.Id);
+            return View("Index", viewModel);
+        }
+
 
         public async Task<ActionResult> Delete(int? id)
         {

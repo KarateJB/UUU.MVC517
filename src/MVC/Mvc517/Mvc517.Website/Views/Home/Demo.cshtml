@@ -5,8 +5,7 @@
 
 @using (Html.BeginForm())
 {
-   @Html.Editor("Name")
-
+    @Html.Editor("Name")
    <input type="submit" value="Submit" class="btn btn-default" />
 
    if (Request["Name"] != null)
