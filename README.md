@@ -50,3 +50,8 @@ public ActionResult JsonDemo()
 }
 ```
 
+
+2. ASYNC actions in Controller 
+
+![](assets/004.PNG)
+

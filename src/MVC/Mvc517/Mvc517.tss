@@ -26,16 +26,13 @@
       <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\shared\_layout.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Web.config</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\web.config</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Index.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\App_Start\RouteConfig.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.DAL\Models\Opera.cs</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\app_start\routeconfig.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

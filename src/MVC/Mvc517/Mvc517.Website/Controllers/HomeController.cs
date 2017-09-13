@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -51,7 +52,7 @@ namespace Mvc517.Website.Controllers
         }
 
 
-        public ActionResult Delete(int? id)
+        public async Task<ActionResult> Delete(int? id)
         {
 
             var entity = this._dbContext.Operas.Where(x => x.Id.Equals(id.Value)).FirstOrDefault();
@@ -73,7 +74,8 @@ namespace Mvc517.Website.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Opera viewModel)
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Create(Opera viewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -86,7 +88,7 @@ namespace Mvc517.Website.Controllers
                 viewModel.CreateOn = DateTime.Now;
                 viewModel.UpdateOn = DateTime.Now;
                 dbContext.Operas.Add(viewModel);
-                dbContext.SaveChanges();
+                await dbContext.SaveChangesAsync();
             }
 
             return RedirectToAction("Index");
@@ -108,7 +110,8 @@ namespace Mvc517.Website.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(Opera viewModel)
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Edit(Opera viewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -126,7 +129,7 @@ namespace Mvc517.Website.Controllers
                 //entity.Composer = viewModel.Composer;
                 //entity.UpdateOn = DateTime.Now;
                 
-                dbContext.SaveChanges();
+                await dbContext.SaveChangesAsync();
 
                 return RedirectToAction("Index");
             }
