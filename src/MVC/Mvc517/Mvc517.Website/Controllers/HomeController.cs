@@ -11,6 +11,19 @@ namespace Mvc517.Website.Controllers
 {
     public class HomeController : Controller
     {
+        MvcDbContext _dbContext = null;
+
+        public HomeController()
+        {
+            this._dbContext = new MvcDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            base.Dispose(disposing);
+            this._dbContext.Dispose();
+        }
+
 
         public ActionResult XmlDemo()
         {
@@ -35,6 +48,20 @@ namespace Mvc517.Website.Controllers
         {
             //return File("~/Upload/movie.mp4", "video/mp4");
             return View();
+        }
+
+
+        public ActionResult Delete(int? id)
+        {
+
+            var entity = this._dbContext.Operas.Where(x => x.Id.Equals(id.Value)).FirstOrDefault();
+            if (entity != null)
+            {
+                this._dbContext.Operas.Remove(entity);
+                this._dbContext.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
         }
 
 
