@@ -69,14 +69,14 @@ namespace Mvc517.Website.Controllers
             if (!id.HasValue)
                 return HttpNotFound();
 
-            
-                using (var dbContext = new MvcDbContext())
-                {
-                    var viewModel = dbContext.Operas.Where(x => x.Id.Equals(id)).FirstOrDefault();
 
-                    return View(viewModel);
-                }
-            
+            using (var dbContext = new MvcDbContext())
+            {
+                var viewModel = dbContext.Operas.Where(x => x.Id.Equals(id.Value)).FirstOrDefault();
+
+                return View(viewModel);
+            }
+
         }
 
         [HttpPost]
@@ -89,16 +89,18 @@ namespace Mvc517.Website.Controllers
 
             using (var dbContext = new MvcDbContext())
             {
-                var entity = dbContext.Operas.Where(x => x.Id.Equals(viewModel.Id)).FirstOrDefault();
-                entity.Title = viewModel.Title;
-                entity.Year = viewModel.Year;
-                entity.Composer = viewModel.Composer;
-                entity.UpdateOn = DateTime.Now;
-                //viewModel.UpdateOn = DateTime.Now;
-                //dbContext.Operas.Attach(viewModel);
+                viewModel.UpdateOn = DateTime.Now;
+                dbContext.Entry(viewModel).State = System.Data.Entity.EntityState.Modified;
+
+                //var entity = dbContext.Operas.Where(x => x.Id.Equals(viewModel.Id)).FirstOrDefault();
+                //entity.Title = viewModel.Title;
+                //entity.Year = viewModel.Year;
+                //entity.Composer = viewModel.Composer;
+                //entity.UpdateOn = DateTime.Now;
+                
                 dbContext.SaveChanges();
 
-                return RedirectToAction("List");
+                return RedirectToAction("Index");
             }
         }
 
@@ -108,7 +110,7 @@ namespace Mvc517.Website.Controllers
         /// </summary>
         /// <param name="myName"></param>
         /// <returns></returns>
-        public ActionResult List()
+        public ActionResult Index()
         {
             using (var dbContext = new MvcDbContext())
             {

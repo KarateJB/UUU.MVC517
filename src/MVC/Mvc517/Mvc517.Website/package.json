@@ -9,7 +9,9 @@
     "bootstrap": "^3.3.7",
     "vue": "^2.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jquery-validation-unobtrusive": "^3.2.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -2,19 +2,31 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.DAL\Migrations\Configuration.cs</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.dal\migrations\configuration.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Controllers\HomeController.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\List.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\list.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Edit.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\edit.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Video.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\video.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Create.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Scripts\app\components\hello.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\package.json</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Shared\_Layout.cshtml</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
