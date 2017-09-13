@@ -54,6 +54,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -119,6 +122,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filter\LogFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -127,6 +131,12 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="package.json" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -150,6 +160,10 @@
     <ProjectReference Include="..\Mvc517.DAL\Mvc517.DAL.csproj">
       <Project>{91f79a65-9395-4111-aa8c-3b0ffaa7634d}</Project>
       <Name>Mvc517.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mvc517.Utility\Mvc517.Utility.csproj">
+      <Project>{a8ceab69-f880-4e63-a567-1eaae8cdad98}</Project>
+      <Name>Mvc517.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

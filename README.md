@@ -55,3 +55,19 @@ public ActionResult JsonDemo()
 
 ![](assets/004.PNG)
 
+
+
+3. ActionFilterAttribute
+
+* Action
+* Controller
+* Global asax
+
+```
+protected void Application_Start()
+{
+    //...
+    GlobalFilters.Filters.Add(new LogFilterAttribute());
+}
+```
+

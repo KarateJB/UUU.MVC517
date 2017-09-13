@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mvc517.Website.Filter;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,9 @@ namespace Mvc517.Website
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+
+            GlobalFilters.Filters.Add(new LogFilterAttribute());
         }
     }
 }

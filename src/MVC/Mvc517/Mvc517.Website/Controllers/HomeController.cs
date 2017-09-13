@@ -1,5 +1,6 @@
 ﻿using Mvc517.DAL;
 using Mvc517.DAL.Models;
+using Mvc517.Website.Filter;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -141,8 +142,12 @@ namespace Mvc517.Website.Controllers
         /// </summary>
         /// <param name="myName"></param>
         /// <returns></returns>
+        [LogFilter]
         public ActionResult Index()
         {
+
+            Debug.WriteLine("Now is in the Action");
+
             using (var dbContext = new MvcDbContext())
             {
                 var viewModel = dbContext.Operas.ToList();
