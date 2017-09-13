@@ -31,6 +31,13 @@ namespace Mvc517.Website.Controllers
         }
 
 
+        public ActionResult Video()
+        {
+            //return File("~/Upload/movie.mp4", "video/mp4");
+            return View();
+        }
+
+
         public ActionResult Create(string myName)
         {
             //Debug.WriteLine($"myName");
@@ -41,13 +48,9 @@ namespace Mvc517.Website.Controllers
         [HttpPost]
         public ActionResult Create(Opera viewModel)
         {
-            if (this.ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                ViewBag.IsValidateOK = "TRUE";
-            }
-            else
-            {
-                ViewBag.IsValidateOK = "FALSE";
+                return View(viewModel);
             }
 
 
@@ -61,21 +64,29 @@ namespace Mvc517.Website.Controllers
             return View(viewModel);
         }
 
-        public ActionResult Edit(int id)
+        public ActionResult Edit(int? id)
         {
-            //Debug.WriteLine($"myName");
+            if (!id.HasValue)
+                return HttpNotFound();
 
-            using (var dbContext = new MvcDbContext())
-            {
-                var viewModel = dbContext.Operas.Where(x => x.Id.Equals(id)).FirstOrDefault();
+            
+                using (var dbContext = new MvcDbContext())
+                {
+                    var viewModel = dbContext.Operas.Where(x => x.Id.Equals(id)).FirstOrDefault();
 
-                return View(viewModel);
-            }
+                    return View(viewModel);
+                }
+            
         }
 
         [HttpPost]
         public ActionResult Edit(Opera viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(viewModel);
+            }
+
             using (var dbContext = new MvcDbContext())
             {
                 var entity = dbContext.Operas.Where(x => x.Id.Equals(viewModel.Id)).FirstOrDefault();
