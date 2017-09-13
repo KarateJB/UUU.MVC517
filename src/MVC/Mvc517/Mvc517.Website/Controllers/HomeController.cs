@@ -88,7 +88,8 @@ namespace Mvc517.Website.Controllers
                 dbContext.Operas.Add(viewModel);
                 dbContext.SaveChanges();
             }
-            return View(viewModel);
+
+            return RedirectToAction("Index");
         }
 
         public ActionResult Edit(int? id)

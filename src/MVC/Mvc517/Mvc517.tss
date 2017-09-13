@@ -5,10 +5,7 @@
       <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.dal\migrations\configuration.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Controllers\HomeController.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\list.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\controllers\homecontroller.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\edit.cshtml</string>
@@ -17,16 +14,28 @@
       <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\video.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Create.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\create.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Scripts\app\components\hello.js</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\scripts\app\components\hello.js</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\package.json</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\package.json</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Shared\_Layout.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\shared\_layout.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Web.config</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Index.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\App_Start\RouteConfig.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.DAL\Models\Opera.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

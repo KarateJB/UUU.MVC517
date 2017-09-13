@@ -6,7 +6,8 @@
 
 
 <div id="app">
-    {{ message }}
+    table>tr*1>td*3         
+    {{ message }} 
 </div>
 
     <p>
@@ -41,7 +42,7 @@
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick="return confirm('This item will be deleted');"})
                 </td>
             </tr>
         }
