@@ -48,13 +48,12 @@
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick="return confirm('This item will be deleted');"})
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "return confirm('This item will be deleted');" })
                 </td>
             </tr>
         }
 
     </table>
-
 
 @*<script src="https://unpkg.com/vue"></script>*@
 <script src="~/Scripts/app/components/hello.js"></script>

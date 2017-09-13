@@ -1,0 +1,16 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+   @Html.Editor("Name")
+
+   <input type="submit" value="Submit" class="btn btn-default" />
+
+   if (Request["Name"] != null)
+   {
+       <span>Hi, @Request["Name"]</span>
+   }
+}

@@ -1,5 +1,6 @@
 ﻿using Mvc517.DAL;
 using Mvc517.DAL.Models;
+using Mvc517.Utility;
 using Mvc517.Website.Filter;
 using System;
 using System.Collections.Generic;
@@ -49,6 +50,12 @@ namespace Mvc517.Website.Controllers
         public ActionResult Video()
         {
             //return File("~/Upload/movie.mp4", "video/mp4");
+            return View();
+        }
+
+        public ActionResult Demo(string name)
+        {
+            LogUtility.Logger.Debug($"{name}");
             return View();
         }
 
