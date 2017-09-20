@@ -56,7 +56,12 @@
     <Compile Include="Migrations\201709110830086_AddNewDatetimes.Designer.cs">
       <DependentUpon>201709110830086_AddNewDatetimes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709150223488_CreateComment.cs" />
+    <Compile Include="Migrations\201709150223488_CreateComment.Designer.cs">
+      <DependentUpon>201709150223488_CreateComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Opera.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validator\YearValidator.cs" />
@@ -71,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709110830086_AddNewDatetimes.resx">
       <DependentUpon>201709110830086_AddNewDatetimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709150223488_CreateComment.resx">
+      <DependentUpon>201709150223488_CreateComment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

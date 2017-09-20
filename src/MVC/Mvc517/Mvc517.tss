@@ -2,37 +2,28 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.dal\migrations\configuration.cs</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Controllers\HomeController.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\controllers\homecontroller.cs</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\shared\_commentpartialview.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\edit.cshtml</string>
+      <string>Source Control Explorer - Disconnected</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\video.cshtml</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\home\create.cshtml</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\scripts\app\components\hello.js</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\package.json</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\shared\_layout.cshtml</string>
+      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\global.asax.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\web.config</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Index.cshtml</string>
+      <string>D:\Works\Source Control\kh-srvtfs2013\MISCollection\IT\OA\OfficialSites\Wahlee Official Website\Wahlee.Official.Website\Utility\ActionFilter\LogActionFilter.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\app_start\routeconfig.cs</string>
+      <string>D:\Works\Source Control\kh-srvtfs2013\MISCollection\IT\OA\OfficialSites\Wahlee Official Website\Wahlee.Official.Website\Areas\WeyaCMS\Controllers\NewsController.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>Start Page</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

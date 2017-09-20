@@ -12,9 +12,16 @@ using System.Web.Mvc;
 
 namespace Mvc517.Website.Controllers
 {
+    //[HandleError(View ="Error")]
     public class HomeController : Controller
     {
         MvcDbContext _dbContext = null;
+
+        protected override void OnException(ExceptionContext filterContext)
+        {
+            filterContext.Result = View("Error");
+        }
+
 
         public HomeController()
         {
@@ -160,6 +167,7 @@ namespace Mvc517.Website.Controllers
         [LogFilter]
         public ActionResult Index()
         {
+            throw new Exception("sdfsdf");
 
             Debug.WriteLine("Now is in the Action");
 
