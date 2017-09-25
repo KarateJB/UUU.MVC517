@@ -80,6 +80,19 @@ protected void Application_Start()
 
 
 
+5. Performance tunning
+
+* Close debug
+
+```
+<system.web>
+    <compilation debug="true" targetFramework="4.6.1" />
+</system.web>
+```
+
+* 
+
+
 ### Exception handling
 
 1. Override 
