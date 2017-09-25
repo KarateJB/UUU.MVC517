@@ -2,7 +2,7 @@
 <ArrayOfTabHighlightState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <TabHighlightState>
     <extensions>
-      <string>Mvc517.Website\Controllers\HomeController.cs</string>
+      <string>mvc517.website\controllers\homecontroller.cs</string>
     </extensions>
     <highlightIndex>3</highlightIndex>
   </TabHighlightState>

@@ -6,64 +6,70 @@
 
 
 @*<div id="app">
-    {{ message }} 
-    <table>
-        <tr>
-            <td>{{ data.name }}</td>
-            <td>{{ data.phone }}</td>
-            <td></td>
-        </tr>
-    </table>         
-</div>*@
+        {{ message }}
+        <table>
+            <tr>
+                <td>{{ data.name }}</td>
+                <td>{{ data.phone }}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>*@
 
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 <hr />
 <div>
     @using (Html.BeginForm("Filter", "Home", FormMethod.Get))
     {
         @Html.TextBox("SearchTitle")
-        <input type="submit" value="查詢" /> 
+        <input type="submit" value="查詢" />
     }
 </div>
 
-    <table class="table">
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Composer)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Year)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Composer)
-            </th>
-            <th></th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Composer)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "return confirm('This item will be deleted');" })
+            </td>
         </tr>
+    }
 
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Title)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Year)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Composer)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "return confirm('This item will be deleted');" })
-                </td>
-            </tr>
-        }
+</table>
 
-    </table>
+
+<div id="app">
+    <span class="alert alert-info">{{ sysinfo.Title }} Copyright {{ sysinfo.Year }} by ({{  sysinfo.Author }})</span>
+</div>
 
 @*<script src="https://unpkg.com/vue"></script>*@
-<script src="~/Scripts/app/components/hello.js"></script>
+@*<script src="~/Scripts/app/components/hello.js"></script>*@
+<script src="~/Scripts/app/components/sysinfo.js"></script>
 

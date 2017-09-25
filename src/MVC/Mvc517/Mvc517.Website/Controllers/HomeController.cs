@@ -151,7 +151,7 @@ namespace Mvc517.Website.Controllers
                 //entity.Year = viewModel.Year;
                 //entity.Composer = viewModel.Composer;
                 //entity.UpdateOn = DateTime.Now;
-                
+
                 await dbContext.SaveChangesAsync();
 
                 return RedirectToAction("Index");
@@ -167,15 +167,33 @@ namespace Mvc517.Website.Controllers
         [LogFilter]
         public ActionResult Index()
         {
-            throw new Exception("sdfsdf");
-
-            Debug.WriteLine("Now is in the Action");
-
             using (var dbContext = new MvcDbContext())
             {
                 var viewModel = dbContext.Operas.ToList();
                 return View(viewModel);
             }
+        }
+
+
+        //public JsonResult SysInfo()
+        [HttpGet]
+        public async Task<JsonResult> SysInfo()
+        {
+            var sys = new SysInfo()
+            {
+                Title = "UUU.MVC517",
+                Year = 2017,
+                Author = "JB.Lin"
+            };
+
+            return Json(sys, JsonRequestBehavior.AllowGet);
+
+            //if (Request.IsAjaxRequest())
+            //{
+            //    return Json(sys);
+            //}
+            //else
+            //    return RedirectToAction("Index");
         }
 
     }

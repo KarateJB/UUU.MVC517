@@ -72,6 +72,17 @@ protected void Application_Start()
 ```
 
 
+
+4. AJAX Helper
+
+
+> [Reference](http://www.c-sharpcorner.com/article/Asp-Net-mvc-ajax-helper/)
+
+
+
 ### Exception handling
+
+1. Override 
+
 
 
