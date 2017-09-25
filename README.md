@@ -94,14 +94,29 @@ protected void Application_Start()
 ```
 
 
+6. Bundle
 
-6. Performance tunning
+  * Create `BundleConfig.cs`
+
+  * Register bundles
+    
+    **Global.asax**
+
+```
+protected void Application_Start()
+{
+    BundleConfig.RegisterBundles(BundleTable.Bundles);
+}
+```
+
+
+7. Performance tunning
 
 * Close debug
 
 ```
 <system.web>
-    <compilation debug="true" targetFramework="4.6.1" />
+    <compilation debug="false" targetFramework="4.6.1" />
 </system.web>
 ```
 

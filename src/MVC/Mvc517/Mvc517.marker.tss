@@ -6,4 +6,10 @@
     </extensions>
     <highlightIndex>3</highlightIndex>
   </TabHighlightState>
+  <TabHighlightState>
+    <extensions>
+      <string>Mvc517.OwinWebsite\Models\AccountViewModels.cs</string>
+    </extensions>
+    <highlightIndex>1</highlightIndex>
+  </TabHighlightState>
 </ArrayOfTabHighlightState>
