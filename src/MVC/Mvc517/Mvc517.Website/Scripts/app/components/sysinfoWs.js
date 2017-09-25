@@ -7,7 +7,9 @@
         getSysInfo: function () {
             var vm = this;
             axios.post('../Webservice/WsSysInfo.asmx/Get', {
-                header: { "Content-type": "application/json" }
+                headers: {
+                    'Content-Type': 'application/json'
+                }
             }).then(function (response) {
 
                 console.log(response.data);

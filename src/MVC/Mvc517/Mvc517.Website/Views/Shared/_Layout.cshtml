@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
 
+
+    @Scripts.Render("~/bundles/js")
+    @Styles.Render("~/bundles/css")
+
     <!-- CSS -->
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />*@
 
     <!-- JS -->
-    <script src="~/Scripts/npm/jquery/jquery.min.js"></script>
+    @*<script src="~/Scripts/npm/jquery/jquery.min.js"></script>
     <script src="~/Scripts/npm/jquery/jquery.validate.min.js"></script>
     <script src="~/Scripts/npm/jquery/jquery.validate.unobtrusive.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/npm/vue/vue.min.js"></script>
+    <script src="~/Scripts/npm/vue/vue.min.js"></script>*@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

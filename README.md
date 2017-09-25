@@ -79,8 +79,23 @@ protected void Application_Start()
 > [Reference](http://www.c-sharpcorner.com/article/Asp-Net-mvc-ajax-helper/)
 
 
+5. Add default namespaces on view
 
-5. Performance tunning
+* In Views/web.config
+
+```
+<system.web.webPages.razor>
+    <pages pageBaseType="System.Web.Mvc.WebViewPage">
+      <namespaces>
+        <add namespace="System.Web.Optimization" />
+      </namespaces>
+    </pages>
+  </system.web.webPages.razor>
+```
+
+
+
+6. Performance tunning
 
 * Close debug
 
@@ -90,12 +105,18 @@ protected void Application_Start()
 </system.web>
 ```
 
-* 
+* BundleTable.EnableOptimizations
+
+Add `BundleTable.EnableOptimizations=true;` on `BundleConfig.cs`.
+```
+
+```
+
+
 
 
 ### Exception handling
 
-1. Override 
 
 
 

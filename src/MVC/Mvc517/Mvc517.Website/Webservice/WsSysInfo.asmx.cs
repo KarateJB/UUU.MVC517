@@ -23,6 +23,8 @@ namespace Mvc517.Website.Webservice
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        //[ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = true)] 
+        //Use HttpGet makes returning-json not works! See https://weblogs.asp.net/scottgu/json-hijacking-and-how-asp-net-ajax-1-0-mitigates-these-attacks
         public string Get()
         {
             var sys = new SysInfo()
