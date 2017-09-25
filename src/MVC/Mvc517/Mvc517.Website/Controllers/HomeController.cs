@@ -175,26 +175,7 @@ namespace Mvc517.Website.Controllers
         }
 
 
-        //public JsonResult SysInfo()
-        [HttpGet]
-        public async Task<JsonResult> SysInfo()
-        {
-            var sys = new SysInfo()
-            {
-                Title = "UUU.MVC517",
-                Year = 2017,
-                Author = "JB.Lin"
-            };
-
-            return Json(sys, JsonRequestBehavior.AllowGet);
-
-            //if (Request.IsAjaxRequest())
-            //{
-            //    return Json(sys);
-            //}
-            //else
-            //    return RedirectToAction("Index");
-        }
+        
 
     }
 }

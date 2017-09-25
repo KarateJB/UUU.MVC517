@@ -66,10 +66,24 @@
 
 
 <div id="app">
-    <span class="alert alert-info">{{ sysinfo.Title }} Copyright {{ sysinfo.Year }} by ({{  sysinfo.Author }})</span>
+    <div>
+        <table class="table">
+            <thead></thead>
+            <tbody>
+                <tr v-for="user in currentUsers">
+                    <td>{{ user.JobTitle }}</td>
+                    <td>{{ user.Name }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <span class="alert alert-info">{{ sysinfo.Title }} Copyright {{ sysinfo.Year }} by ({{  sysinfo.Author }})</span>
+    </div>
 </div>
 
-@*<script src="https://unpkg.com/vue"></script>*@
 @*<script src="~/Scripts/app/components/hello.js"></script>*@
-<script src="~/Scripts/app/components/sysinfoWs.js"></script>
+<script src="~/Scripts/app/components/sysuserinfo.js"></script>
+@*<script src="~/Scripts/app/components/sysinfoWs.js"></script>*@
+
 
