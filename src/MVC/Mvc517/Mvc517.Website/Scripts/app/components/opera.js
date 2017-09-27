@@ -1,45 +1,22 @@
 ﻿var app = new Vue({
     el: '#app',
     data: {
-        sysinfo: {},
-        currentUsers: []
+        operas: {},
+        createUri: "/Rest/Create/",
+        editUri: "/Rest/Edit/",
+        deleteUri: "/Rest/Delete/",
+
     },
     methods: {
-        getSysInfo: function () {
-            return axios.get('/Ajax/SysInfo');
-            //var vm = this;
-            //axios.get('Ajax/SysInfo').then(function (response) {
-
-            //    vm.sysinfo = response.data;
-
-            //}, function (error) {
-            //    console.log(error.statusText);
-            //});
-        },
-
-        getCurrentUsers: function () {
-            return axios.get('/Ajax/CurrentUsers');
-            //var vm = this;
-            //axios.get('Ajax/CurrentUsers').then(function (response) {
-
-            //    vm.currentUsers = response.data;
-
-            //}, function (error) {
-            //    console.log(error.statusText);
-            //});
+        getOperas: function () {
+            return axios.get('/api/RestApi/Get');
         }
     },
     mounted: function () {
         var vm = this;
 
-        //vm.getSysInfo();
-        //vm.getCurrentUsers();
-
-        axios.all([this.getSysInfo(), this.getCurrentUsers()])
-            .then(axios.spread(function (sys, users) {
-                vm.sysinfo = sys.data;
-                vm.currentUsers = users.data;
-            }));
-
+        vm.getOperas().then(response => {
+            vm.operas = response.data;
+        });
     }
 })

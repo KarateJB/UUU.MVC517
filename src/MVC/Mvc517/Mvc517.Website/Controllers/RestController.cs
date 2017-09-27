@@ -35,35 +35,6 @@ namespace Mvc517.Website.Controllers
         }
 
 
-        
-        public ActionResult Create(string myName)
-        {
-            //Debug.WriteLine($"myName");
-            var viewModel = new Opera();
-            return View(viewModel);
-        }
-
-        
-
-        public ActionResult Edit(int? id)
-        {
-            if (!id.HasValue)
-                return HttpNotFound();
-
-
-            using (var dbContext = new MvcDbContext())
-            {
-                var viewModel = dbContext.Operas.Where(x => x.Id.Equals(id.Value)).FirstOrDefault();
-
-                return View(viewModel);
-            }
-
-        }
-
-
-        
-
-
         /// <summary>
         /// 
         /// </summary>
@@ -72,15 +43,8 @@ namespace Mvc517.Website.Controllers
         [LogFilter]
         public ActionResult Index()
         {
-            using (var dbContext = new MvcDbContext())
-            {
-                var viewModel = dbContext.Operas.ToList();
-                return View(viewModel);
-            }
+            return View();
         }
-
-
-
-
+        
     }
 }

@@ -227,8 +227,30 @@ or
 
 
 
+
+
+## Http Module
+
+1. Inherit `System.Web.IHttpModule` and implement `Init` and `Dispose` functions
+2.
+
+```
+<system.webServer>
+  <modules>
+       <add name="module1" type="{Namespace.CustomModule},{Namespace}" />
+  </modules>
+</system.webServer>
+```
+
+
+
+## Http Handler
+
+
+
+## Web Socket 
+
+
+
+
 ### Exception handling
-
-
-
-
