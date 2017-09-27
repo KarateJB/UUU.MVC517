@@ -13,27 +13,54 @@ namespace Mvc517.Website.Webservice
     /// Summary description for SysInfo
     /// </summary>
     [ScriptService]
-    [WebService(Namespace = "", Description = "System information")]
+    [WebService(Namespace = "Mvc517.Website.Webservice", Description = "System information")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    // [System.Web.Script.Services.ScriptService]
     public class WsSysInfo : System.Web.Services.WebService
     {
+
+        [WebMethod]
+        //[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = true)]
+        //Use HttpGet makes returning-json not works! See https://weblogs.asp.net/scottgu/json-hijacking-and-how-asp-net-ajax-1-0-mitigates-these-attacks
+        public SysInfo GetJsonObj()
+        {
+            var sys = new SysInfo()
+            {
+                Title = "Get json object from web service",
+                Year = 2017,
+                Author = "JB.Lin"
+            };
+            return sys;
+        }
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         //[ScriptMethod(ResponseFormat = ResponseFormat.Json, UseHttpGet = true)] 
         //Use HttpGet makes returning-json not works! See https://weblogs.asp.net/scottgu/json-hijacking-and-how-asp-net-ajax-1-0-mitigates-these-attacks
-        public string Get()
+        public string GetJsonStr()
         {
             var sys = new SysInfo()
             {
-                Title = "UUU.MVC517",
+                Title = "Get json string from web service",
                 Year = 2017,
                 Author = "JB.Lin"
             };
             return new JavaScriptSerializer().Serialize(sys);
+            
+        }
+
+        [WebMethod]
+        [ScriptMethod(UseHttpGet = true)] 
+        public SysInfo GetXml()
+        {
+            var sys = new SysInfo()
+            {
+                Title = "Get XML from web service",
+                Year = 2017,
+                Author = "JB.Lin"
+            };
+            return sys;
         }
     }
 }

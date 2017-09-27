@@ -2,13 +2,7 @@
 <ArrayOfTabHighlightState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <TabHighlightState>
     <extensions>
-      <string>mvc517.website\controllers\homecontroller.cs</string>
-    </extensions>
-    <highlightIndex>3</highlightIndex>
-  </TabHighlightState>
-  <TabHighlightState>
-    <extensions>
-      <string>Mvc517.OwinWebsite\Models\AccountViewModels.cs</string>
+      <string>Mvc517.Website\Controllers\HomeController.cs</string>
     </extensions>
     <highlightIndex>1</highlightIndex>
   </TabHighlightState>

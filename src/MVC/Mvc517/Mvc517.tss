@@ -2,28 +2,19 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Controllers\HomeController.cs</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Index.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\views\shared\_commentpartialview.cshtml</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Controllers\AjaxController.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>Source Control Explorer - Disconnected</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Webservice\WsSysInfo.asmx.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\global.asax.cs</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Scripts\app\components\sysinfoWs.js</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>d:\works\source control\github\karatejb\uuu.mvc517\src\mvc\mvc517\mvc517.website\web.config</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>D:\Works\Source Control\kh-srvtfs2013\MISCollection\IT\OA\OfficialSites\Wahlee Official Website\Wahlee.Official.Website\Utility\ActionFilter\LogActionFilter.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>D:\Works\Source Control\kh-srvtfs2013\MISCollection\IT\OA\OfficialSites\Wahlee Official Website\Wahlee.Official.Website\Areas\WeyaCMS\Controllers\NewsController.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>Start Page</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Web.config</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

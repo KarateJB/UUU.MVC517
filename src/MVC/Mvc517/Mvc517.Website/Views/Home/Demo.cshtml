@@ -3,6 +3,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+<h2>@Session["count"]</h2>
+
 @using (Html.BeginForm())
 {
     @Html.Editor("Name")
@@ -13,3 +16,6 @@
        <span>Hi, @Request["Name"]</span>
    }
 }
+
+
+@Html.ActionLink("Go to Video page", "Video")

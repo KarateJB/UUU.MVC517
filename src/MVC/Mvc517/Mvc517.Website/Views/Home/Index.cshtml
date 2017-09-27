@@ -66,7 +66,7 @@
 
 
 <div id="app">
-    <div>
+    @*<div>
         <table class="table">
             <thead></thead>
             <tbody>
@@ -76,14 +76,14 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    </div>*@
     <div>
-        <span class="alert alert-info">{{ sysinfo.Title }} Copyright {{ sysinfo.Year }} by ({{  sysinfo.Author }})</span>
+        <span class="alert alert-info"><b>{{ sysinfo.Title }}</b>  &copy; Copyright {{ sysinfo.Year }} by {{  sysinfo.Author }}</span>
     </div>
 </div>
 
 @*<script src="~/Scripts/app/components/hello.js"></script>*@
-<script src="~/Scripts/app/components/sysuserinfo.js"></script>
-@*<script src="~/Scripts/app/components/sysinfoWs.js"></script>*@
+@*<script src="~/Scripts/app/components/sysuserinfo.js"></script>*@
+<script src="~/Scripts/app/components/sysinfoWs.js"></script>
 
 

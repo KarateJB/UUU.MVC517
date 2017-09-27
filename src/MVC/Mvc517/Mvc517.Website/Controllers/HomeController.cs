@@ -57,12 +57,20 @@ namespace Mvc517.Website.Controllers
         public ActionResult Video()
         {
             //return File("~/Upload/movie.mp4", "video/mp4");
+            ViewBag.companyName = TempData["companyName"];
+            LogUtility.Logger.Debug($"{Session["companyName"].ToString()}");
             return View();
         }
 
         public ActionResult Demo(string name)
         {
             LogUtility.Logger.Debug($"{name}");
+            TempData["companyName"] = "The Force studio";
+            if (Session["count"] == null)
+                Session["count"] = 0;
+            else
+                Session["count"] = (int)Session["count"] + 1;
+
             return View();
         }
 
@@ -175,7 +183,7 @@ namespace Mvc517.Website.Controllers
         }
 
 
-        
+
 
     }
 }
