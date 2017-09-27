@@ -6,4 +6,10 @@
     </extensions>
     <highlightIndex>1</highlightIndex>
   </TabHighlightState>
+  <TabHighlightState>
+    <extensions>
+      <string>Mvc517.Website\Scripts\app\components\opera.js</string>
+    </extensions>
+    <highlightIndex>4</highlightIndex>
+  </TabHighlightState>
 </ArrayOfTabHighlightState>
