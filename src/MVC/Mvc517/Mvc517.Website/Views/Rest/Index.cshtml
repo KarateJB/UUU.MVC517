@@ -9,31 +9,13 @@
 </p>
 
 <div id="app">
-    <table class="table">
-        <tr>
-            <th>
-                名稱
-            </th>
-            <th>
-                年分
-            </th>
-            <th>
-                作曲家
-            </th>
-            <th></th>
-        </tr>
+    <!-- Start of Listing -->
+    <index-comp :operas="operas"></index-comp>
+    <!-- End of Listing -->
 
-        <tr v-for="opera in operas">
-            <input type="hidden" value="{{ opera.Id }}" />
-            <td>{{ opera.Title }}</td>
-            <td>{{ opera.Year }}</td>
-            <td>{{ opera.Composer }}</td>
-            <td>
-                <a href="{{ opera.Id }}">Edit</a> |
-                <a href="/Home/Delete/{{ Id }}" >Delete</a>
-            </td>
-        </tr>
-    </table>
+    <!-- Start of Create -->
+    <create-comp></create-comp>
+    <!-- End of Create -->
 </div>
 
 <script src="~/Scripts/app/components/opera.js"></script>

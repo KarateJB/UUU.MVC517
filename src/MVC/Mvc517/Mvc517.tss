@@ -2,19 +2,25 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Scripts\app\components\opera.js</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Rest\Index.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Create.cshtml</string>
+    </ArrayOfString>
+    <ArrayOfString>
       <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Views\Home\Index.cshtml</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Controllers\AjaxController.cs</string>
+      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\App_Start\BundleConfig.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Webservice\WsSysInfo.asmx.cs</string>
     </ArrayOfString>
     <ArrayOfString>
       <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Scripts\app\components\sysinfoWs.js</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>D:\Works\Source Control\GitHub\KarateJB\UUU.MVC517\src\MVC\Mvc517\Mvc517.Website\Web.config</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

@@ -7,9 +7,11 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
-namespace Mvc517.Website.Controllers
+namespace Mvc517.Webapi.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class RestApiController : ApiController
     {
         [HttpGet]

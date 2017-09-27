@@ -27,7 +27,7 @@
         getSysInfoJsonObj: function () {
             var vm = this;
 
-            axios.get('../Webservice/WsSysInfo.asmx/GetJsonObj', {
+            axios.post('../Webservice/WsSysInfo.asmx/GetJsonObj', {
                 headers: {
                     'Content-Type': 'application/json'
                 }

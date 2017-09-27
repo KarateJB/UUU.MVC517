@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc517.Utility", "Mvc517.Ut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc517.OwinWebsite", "Mvc517.OwinWebsite\Mvc517.OwinWebsite.csproj", "{A2A90E96-4D12-49C4-B751-A9125784B435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mvc517.Webapi", "Mvc517.Webapi\Mvc517.Webapi.csproj", "{218E1619-7CCA-48CC-87F3-23A5D64E4955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A2A90E96-4D12-49C4-B751-A9125784B435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2A90E96-4D12-49C4-B751-A9125784B435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2A90E96-4D12-49C4-B751-A9125784B435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218E1619-7CCA-48CC-87F3-23A5D64E4955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218E1619-7CCA-48CC-87F3-23A5D64E4955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218E1619-7CCA-48CC-87F3-23A5D64E4955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218E1619-7CCA-48CC-87F3-23A5D64E4955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -250,7 +250,18 @@ or
 
 ## Web Socket 
 
+1. Available after IIS 7, and must enable it.
 
 
 
 ### Exception handling
+
+
+
+### DEBUG with Disgonotic tools: Events
+
+
+
+## Reference
+
+* [Can i use](https://caniuse.com/)

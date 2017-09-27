@@ -18,11 +18,13 @@ namespace Mvc517.Website.HttpModules
         {
             app.BeginRequest += (s,e) =>
             {
-                var uri = app.Context.Request.QueryString["uri"];
-                if (!string.IsNullOrEmpty(uri))
-                {
-                    app.Context.Response.Redirect(uri);
-                }
+                //var uri = app.Context.Request.QueryString["uri"];
+                //if (!string.IsNullOrEmpty(uri))
+                //{
+                //    app.Context.Response.Redirect(uri);
+                //}
+
+                app.Context.Response.Headers.Add("By", "JB");
             };
         }
     }
