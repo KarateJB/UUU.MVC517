@@ -31,7 +31,8 @@
                         <input type="submit" value="Create" class="btn btn-default" />
                     </div>
                 </div>
-             </div>          </div>`
+             </div>
+          </div>`
 });
 
 
@@ -39,10 +40,11 @@ Vue.component('index-comp', {
     props: ['operas'],
     template: `<div>
         <table class="table">
+           <tbody>
             <tr>
-                <th>名稱</th>
-                <th>年分</th>
-                <th>作曲家</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Composer</th>
                 <th></th>
             </tr>
             <tr v-for="opera in operas">
@@ -55,9 +57,38 @@ Vue.component('index-comp', {
                     <a href="/Home/Delete/{{ Id }}">Delete</a>
                 </td>
             </tr>
+           </tbody>
         </table>
     </div>`
 });
+
+//var List =  {
+//    props: ['operas'],
+//    template: `
+//        <div>
+//        <table class="table">
+//           <tbody>
+//            <tr>
+//                <th>Title</th>
+//                <th>Year</th>
+//                <th>Composer</th>
+//                <th></th>
+//            </tr>
+//            <tr v-for="opera in operas">
+//                <input type="hidden" value="{{ opera.Id }}" />
+//                <td>{{ opera.Title }}</td>
+//                <td>{{ opera.Year }}</td>
+//                <td>{{ opera.Composer }}</td>
+//                <td>
+//                    <a href="{{ opera.Id }}">Edit</a> |
+//                    <a href="/Home/Delete/{{ Id }}">Delete</a>
+//                </td>
+//            </tr>
+//           </tbody>
+//        </table>
+//    </div>`
+//};
+
 
 
 var app = new Vue({
@@ -67,7 +98,6 @@ var app = new Vue({
         createUri: "/Rest/Create/",
         editUri: "/Rest/Edit/",
         deleteUri: "/Rest/Delete/",
-
     },
     methods: {
         getOperas: function () {
